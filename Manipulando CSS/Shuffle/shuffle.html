@@ -1,0 +1,57 @@
+<!-- Shuffle!-->
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <!-- Crea un <div> con id source, otro con id destination, ambos con texto adentro. -->
+        <div id=source>
+            <h1>Hola Mundo</h1>
+        </div>
+        <div id=destination>
+            <h3>Chau Mundo</h3>
+        </div>
+
+        <script>
+          /*   Guarda el cóntenido de source en una variable. */
+            var $divSou = document.querySelector("div#source");
+            /* Usa la variable para pasar el texto al div destination */
+            var $divDest = document.querySelector("div#destination");
+            $divDest.textContent = $divSou.textContent
+            
+
+        </script>
+            <!-- Crea s con ids swap_1 y swap_2. -->
+
+        <s id=swap_1>
+            Algo
+        </s>
+        <br>
+        <s id=swap_2>
+            Nada
+        </s>
+
+        <script>
+            var $s1 = document.querySelector("s#swap_1");
+            var $s2 = document.querySelector("s#swap_2");
+
+            /* Cómo podemos intercambiar el texto entre los dos swaps?  */
+            var memoriaSwap = $s1.textContent
+            $s1.textContent = $s2.textContent
+            $s2.textContent = memoriaSwap  
+
+            
+        </script>
+
+
+        <div style="border: coral;
+                    border-width: 10px;">
+
+        </div>
+            
+    </body>
+</html>
+
+
+

@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Magic Div</title>
+    </head>
+    <body>
+        <style>
+            .ocultar {
+                display: none;
+            }
+        </style>
+        <div style="width: 150px; height: 150px;" id=magic></div>
+        <img id=imagen ;" src="https://depor.com/resizer/YXhaY8CoBZIkzSI6_RiilBJkf-o=/580x330/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/ZGG4HT2PXVASNJOWWWRMM56UE4.jpg" alt="">
+    <script>
+        document.getElementById("magic").addEventListener("mouseenter", function() {
+            document.getElementById("imagen").classList.toggle("ocultar")
+        })
+
+    </script>
+    
+    </body>
+</html>

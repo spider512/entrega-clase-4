@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>RESALTADOR</title>
+        <link rel="StyleSheet" href="./resaltador.css" type="text/css">
+    </head>
+    <body>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, sequi odio? Iusto rerum doloribus consequuntur minima eveniet qui nisi eaque, impedit eos inventore ab, repellat exercitationem voluptates nihil error reiciendis.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, sequi odio? Iusto rerum doloribus consequuntur minima eveniet qui nisi eaque, impedit eos inventore ab, repellat exercitationem voluptates nihil error reiciendis.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, sequi odio? Iusto rerum doloribus consequuntur minima eveniet qui nisi eaque, impedit eos inventore ab, repellat exercitationem voluptates nihil error reiciendis.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, sequi odio? Iusto rerum doloribus consequuntur minima eveniet qui nisi eaque, impedit eos inventore ab, repellat exercitationem voluptates nihil error reiciendis.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, sequi odio? Iusto rerum doloribus consequuntur minima eveniet qui nisi eaque, impedit eos inventore ab, repellat exercitationem voluptates nihil error reiciendis.</p>
+        
+        <script>
+            var losP = document.getElementsByTagName("p")
+
+            for (let index = 0; index < losP.length; index++) {
+                const element = losP[index]
+                element.addEventListener("click",
+                function()  { 
+                    this.classList.toggle("resaltar") 
+                }
+            )
+                
+            }
+        </script>
+    </body>
+</html>

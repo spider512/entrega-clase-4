@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+	<!-- Crea un documento HTML con un div adentro
+	Usando la propiedad style del elemento en javascript dale a ese div altura, ancho y un color de fondo
+	Ahora crea la clase .square en tu stylesheet, y dale las mismas propiedades
+	Ahora en vez de agregarsela con la propiedad style, hazlo con la propiedad classList.
+	Que devuelve h1.classList?
+	Desde tu consola quítale la clase .square al div
+	Haz una función que cada un segundo (setInterval()) se fije si tiene la clase square, si la tiene que se la quite, y si no la tiene la agregue.
+	Si lo hiciste con un if y un else no esta mal, pero prueba usando classList.toggle(). Mucho mas simple no? -->
+<head>
+	<meta charset="utf-8">
+	<title> pruebas DOM</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+<h1>Probando el div</h1>
+<!-- <div style="height: 70px; width: 150px; background: hotpink">
+
+</div> -->
+
+<div >
+
+</div>
+
+<script type="text/javascript">
+	
+var $p = document.querySelector("div")
+$p.classList.add("square")
+
+</script>
+
+<script>
+
+function alternarSquare() {
+	$p.classList.toggle("square") 
+}
+
+setInterval(alternarSquare,1000) 
+
+	
+</script>
+
+
+</body>
+</html>

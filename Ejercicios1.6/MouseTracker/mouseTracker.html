@@ -1,0 +1,46 @@
+<!-- INCOMPLETO -->
+
+
+
+<html>
+    <head>
+        <title>Mouse Tracker</title>
+    </head>
+    <body id="bodyyy">
+        <style>
+            body {
+                height: 100vh
+            }
+            .top {
+                position: top;
+            }
+            .left {
+                position: left;
+            }
+        </style>
+
+        <img style="position: fixed;" src="https://media.giphy.com/media/MtQxKzhytFsmQ/giphy.gif" alt="">
+        
+        <script>
+           var bodyy = document.getElementById("bodyyy")
+            
+            bodyy.addEventListener("mousemove",
+                function(e)  { 
+                    e.clientY(
+                        function() {
+                            document.getElementsByTagName("img").style("style","top")
+                        }
+                        );
+                        e.clientX(
+                        function() {
+                            document.getElementsByTagName("img").setAtributte("style","left")
+                        }
+                    )
+                   
+                }
+            )
+        </script>
+    
+    
+    </body>
+</html>

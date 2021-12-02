@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Show me the money</title>
+    </head>
+    <body>
+        <style>
+            .oculto {
+                display: none;
+            }
+        </style>
+
+
+        <button id=btnMoney>Show me the Money</button>
+        <br>
+        <img id=money class=oculto src="https://i.ytimg.com/vi/9IFhdvV2i_U/hqdefault.jpg" alt="">
+        <br>
+        <button id=btnMiami >Show me Miami</button>
+        <br>
+        <img id=miami class=oculto src="https://ichef.bbci.co.uk/news/640/cpsprodpb/57D2/production/_119128422_gettyimages-590299316.jpg" alt="">
+        <br>
+        <button id=btnMiame>Show me Maiameee</button>
+        <img id=miame  class=oculto src="https://i0.wp.com/blog.elmeme.me/wp-content/uploads/-000//1/2017-12-24_1514128708.png?w=662" alt="">
+
+
+        <script>
+
+            document.getElementById("btnMoney").addEventListener("click",ocultarMostrarMoney)
+            document.getElementById("btnMiami").addEventListener("click",ocultarMostrarMiami)
+            document.getElementById("btnMiame").addEventListener("click",ocultarMostrarMiame)
+
+            document.getElementById("money").addEventListener("click",ocultar)
+            document.getElementById("miami").addEventListener("click",ocultar)
+            document.getElementById("miame").addEventListener("click",ocultar)
+
+            function ocultarMostrarMoney()  {    
+               document.getElementById("money").classList.toggle("oculto")
+            }
+            function ocultarMostrarMiami()  {    
+               document.getElementById("miami").classList.toggle("oculto")
+            }
+            function ocultarMostrarMiame()  {    
+               document.getElementById("miame").classList.toggle("oculto")
+            }
+
+            function ocultar()  {    
+                this.classList.toggle("oculto")
+            }
+
+
+
+        </script>
+    </body>
+</html>

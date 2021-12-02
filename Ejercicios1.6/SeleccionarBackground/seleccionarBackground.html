@@ -1,0 +1,31 @@
+<!-- INCOMPLETO -->
+
+<html>
+
+    <head>
+        <title>
+            Seleccionar Background
+        </title>
+    </head>
+    <body id=bo>
+        <input id=in type="text" value="Ingrese un color">
+    </body>
+
+    <script>
+        
+        const input = document.getElementById("in")
+        const body = document.getElementById("bo")
+        var color = document.getElementById("in").getAttribute("value")
+
+        input.addEventListener("keydown", function(e) {
+            if (e.keyCode == 13) {
+                var color = document.getElementById("in").getAttribute("value");
+                body.setAttribute("style","background-color:"+color);
+            }
+            });
+
+
+        
+    </script>
+
+</html>
